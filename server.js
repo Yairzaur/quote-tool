@@ -30,6 +30,7 @@ app.post('/create-quote', async (req, res) => {
     'InvoiceHead.Phone': customerPhone || '',
     'InvoiceHead.Language': 'he',
     'InvoiceHead.SendByEmail': 'false',
+    'InvoiceHead.IsAutoCreateUpdateAccount': 'true',
   };
 
   lines.forEach((line, i) => {
